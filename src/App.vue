@@ -7,7 +7,6 @@
     font-family: "Poppins";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
   }
 
   @font-face {
@@ -16,8 +15,9 @@
   }
 
   body{
-    background-color: #c3fcf1;
+    background-color: whitesmoke;
   }
+
 
   #title {
     background-color: grey;
