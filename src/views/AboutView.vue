@@ -14,7 +14,7 @@
         <p>Desde entonces hemos logrado encontrar un nuevo hogar a más de 1000 animales, y seguimos sumando.</p>
         <p>¿Nos ayudarás a encontrar un hogar a estos animales?</p>
 
-        <p class="text-muted mb-0"><button class="btn btn-info" @click="navigateAnimals()">Ver animales</button></p>
+        <p class="text-muted mb-0"><a href="/animals"><button class="btn btn-info">Ver animales</button></a></p>
       </div>
     </div>
 
@@ -33,11 +33,6 @@
       return {
         itemMenu: 'about'
       };
-    },
-    methods: {
-      navigateAnimals() {
-        this.router.push('/animals')
-      }
     }
   }
 </script>
@@ -65,6 +60,11 @@
 
   #linkToAsign{
     margin-top: 20px;
+  }
+
+  a{
+    color: inherit;
+    text-decoration: inherit;
   }
 
   a:hover {
