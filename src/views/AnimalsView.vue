@@ -4,17 +4,19 @@
 
     <div v-for="animal in animales" :key="animal.id">
       <div class="gallery col-md-2">
-        <img :src="animal.imagen" alt="" @click="navigateAnimal">
-        <div class="desc">
-          <h4>
-            {{animal.nombre}}
-            <img src="@/assets/img/iconMale.png" alt="Icono género masculino" class="img-fluid iconGender" v-if="animal.sexo == 'macho'"/>
-            <img src="@/assets/img/iconFemale.png" alt="Icono género masculino" class="img-fluid iconGender" v-if="animal.sexo == 'hembra'"/>
-            <img src="@/assets/img/iconUnknown.png" alt="Icono género masculino" class="img-fluid iconGender" v-if="animal.sexo == 'desconocido'"/>
-          </h4>
-          <p>{{animal.especie}} {{animal.tamanyo}}</p>
-          <p>{{animal.edad}} años</p>
-        </div>
+        <a :href="'/animals/' + animal.id">
+          <img :src="animal.imagen" alt="" class="rounded img-fluid shadow">
+          <div class="desc">
+            <h4>
+              {{animal.nombre}}
+              <img src="@/assets/img/iconMale.png" alt="Icono género masculino" class="img-fluid iconGender" v-if="animal.sexo == 'macho'"/>
+              <img src="@/assets/img/iconFemale.png" alt="Icono género masculino" class="img-fluid iconGender" v-if="animal.sexo == 'hembra'"/>
+              <img src="@/assets/img/iconUnknown.png" alt="Icono género masculino" class="img-fluid iconGender" v-if="animal.sexo == 'desconocido'"/>
+            </h4>
+            <p>{{animal.especie}} {{animal.tamanyo}}</p>
+            <p>{{animal.edad}} años</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -41,7 +43,8 @@
     },
     methods: {
       navigateAnimals() {
-        this.router.push('/animals')
+        alert("hola")
+        document.location.href = '/'
       }
     }
   }
@@ -80,5 +83,10 @@
   .iconGender {
     width: 25px !important;
     height: 25px !important;
+  }
+
+  a{
+    color: inherit;
+    text-decoration: inherit;
   }
 </style>

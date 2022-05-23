@@ -89,7 +89,7 @@
         // Enviamos el mensaje
         emailjs.send('nuevolazo', 'template_i5ajs9w', templateParams)
           .then(function() {
-            alert("Email enviado correctamente")
+            alert("Solicitud enviada correctamente")
           }
         );
 

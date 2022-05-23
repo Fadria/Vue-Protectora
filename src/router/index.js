@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AboutView from '../views/AboutView.vue'
 import AnimalsView from '../views/AnimalsView.vue'
+import AnimalView from '../views/AnimalView.vue'
 import ContactView from '../views/ContactView.vue'
 
 const routes = [
@@ -13,6 +14,10 @@ const routes = [
     path: '/animals',
     name: 'animals',
     component: AnimalsView
+  },
+  { 
+    path: '/animals/:id', 
+    component: AnimalView 
   },
   {
     path: '/contact',
