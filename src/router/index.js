@@ -3,6 +3,7 @@ import AboutView from '../views/AboutView.vue'
 import AnimalsView from '../views/AnimalsView.vue'
 import AnimalView from '../views/AnimalView.vue'
 import ContactView from '../views/ContactView.vue'
+import VolunteerView from '../views/VolunteerView.vue'
 
 const routes = [
   {
@@ -23,6 +24,11 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactView
+  },
+  {
+    path: '/becomeVolunteer',
+    name: 'becomeVolunteer',
+    component: VolunteerView
   }
 ]
 
