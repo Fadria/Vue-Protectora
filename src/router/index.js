@@ -4,6 +4,8 @@ import AnimalsView from '../views/AnimalsView.vue'
 import AnimalView from '../views/AnimalView.vue'
 import ContactView from '../views/ContactView.vue'
 import VolunteerView from '../views/VolunteerView.vue'
+import RequirementsView from '../views/RequirementsView.vue'
+import RequirementView from '../views/RequirementView.vue'
 
 const routes = [
   {
@@ -19,6 +21,15 @@ const routes = [
   { 
     path: '/animals/:id', 
     component: AnimalView 
+  },
+  {
+    path: '/requirements',
+    name: 'requirements',
+    component: RequirementsView
+  },
+  { 
+    path: '/requirements/:id', 
+    component: RequirementView 
   },
   {
     path: '/contact',

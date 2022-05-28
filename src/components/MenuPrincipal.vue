@@ -15,6 +15,10 @@
         <a class="nav-link" :href="'/animals'">Ver animales</a>
       </li>
 
+      <li class="nav-item" :class="{ 'active' : activeItem == 'requirements'}">
+        <a class="nav-link" :href="'/requirements'">Requisitos previos</a>
+      </li>
+
       <li class="nav-item" :class="{ 'active' : activeItem == 'volunteer'}">
         <a class="nav-link" :href="'/becomeVolunteer'">Convertirse en voluntario</a>
       </li>
