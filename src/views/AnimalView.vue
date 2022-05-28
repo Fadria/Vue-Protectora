@@ -70,6 +70,7 @@
 <script>
   import MenuPrincipal from '@/components/MenuPrincipal.vue'
   import emailjs from 'emailjs-com';
+  import ip from './ip.txt';
 
   export default {
     name: 'contact-view',
@@ -86,7 +87,8 @@
       };
     },
     async created() {
-      const response = await fetch("http://192.168.1.134:8069/apirest/animales/" + this.$route.params.id);
+      // Obtenemos los datos del animal
+      const response = await fetch(ip + "apirest/animales/" + this.$route.params.id);
       const data = await response.json();
       this.animal = data.data
     },

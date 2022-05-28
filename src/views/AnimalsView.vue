@@ -24,6 +24,7 @@
 
 <script>
   import MenuPrincipal from '@/components/MenuPrincipal.vue'
+  import ip from './ip.txt';
 
   export default {
     name: 'animals-view',
@@ -37,15 +38,9 @@
       };
     },
     async created() {
-      const response = await fetch("http://192.168.1.134:8069/apirest/animales");
+      const response = await fetch(ip + "apirest/animales");
       const data = await response.json();
       this.animales = data.data
-    },
-    methods: {
-      navigateAnimals() {
-        alert("hola")
-        document.location.href = '/'
-      }
     }
   }
 </script>
