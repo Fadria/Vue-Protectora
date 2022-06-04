@@ -1,3 +1,11 @@
+
+/**
+ * @Author: Federico Adrià Carrasco
+ * @Date: 04/06/2022
+ * @Email: fadriacarrasco@gmail.com
+ *
+ */
+
 <template>
   <nav class="navbar navbar-expand-lg navbar-light">
     <img src="@/assets/logo.png" alt="Logotipo de la aplicación" id="logo"/>

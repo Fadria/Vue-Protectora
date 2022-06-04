@@ -1,4 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router'
+
+/**
+ * @Author: Federico Adrià Carrasco
+ * @Date: 04/06/2022
+ * @Email: fadriacarrasco@gmail.com
+ *
+ */
+
+ import { createRouter, createWebHistory } from 'vue-router'
 import AboutView from '../views/AboutView.vue'
 import AnimalsView from '../views/AnimalsView.vue'
 import AnimalView from '../views/AnimalView.vue'
