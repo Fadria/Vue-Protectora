@@ -1,24 +1,3 @@
-# web-protectora
+# Vue: Protectora
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Proyecto final realizado durante el ciclo superior de desarrollo de aplicaciones multiplataforma con la finalidad de proporcionar una aplicación web y móvil con el que gestionar las diferentes necesidades de una protectora de animales.
